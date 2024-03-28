@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.headerStyle {
+    background-color: red;
+    margin: 0%;
+    padding: 20px;
+    text-align: center;     
+}
+#navigate{
+     position: sticky;
+     top: 0%;
+    }
+.linkTab {
+        background-color:grey;
+        height: 70px;     
+}
+ .linkTab li{
+            padding: 10px;
+            display: inline-block;
+        }
+
+  .linkTab li:hover{
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+   .linkTab li:nth-child(2):hover #dropdown_1, .linkTab li:nth-child(3):hover #dropdown_2{
+            display: block;
+        }
+
+    #dropdown_1, #dropdown_2{
+            position: absolute;
+            width: auto;
+            max-width: 150px;
+            display: none;
+            top: 42.5px;
+            background-color: whitesmoke;
+            padding: 0%;
+        }
+
+         #dropdown_1 li:hover, #dropdown_2 li:hover{
+            background-color: gainsboro;
+        }
+ #dropdown_1 li a, #dropdown_2 li a{
+            color: steelblue;
+            font-size: 16px;
+        }
+
+
+
+</style>
+<header>
+<h1 class="headerStyle">Demo of Dropdown</h1>
+</header?
+<nav id="navigate">
+<ul class="linkTab">
+    <li> <a href= "gmailPage.html">link1</a></li>
+
+    <li> <a href= "#">link2</a>
+    <ul id="dropdown_1">
+    <li> <a href= "#">DD_Link_1</a></li>
+    <li> <a href= "#">DD_Link_2</a></li>
+    <li> <a href= "#">DD_Link_3</a></li>
+    </li>
+    </ul>
+
+    <li> <a href= "#">link3</a>
+    <ul id="dropdown_2">
+    <li> <a href= "#">DD_Link_1</a></li>
+    <li> <a href= "#">DD_Link_2</a></li>
+    <li> <a href= "#">DD_Link_3</a></li>
+    <li> <a href= "#">DD_Link_4</a></li>
+    </ul>
+    </li>
+</ul>
+</nav>
+    
+</head>
+</html>
